@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="titulo">Calculadora de Área y Perímetro de Figuras</h1>
+        
+        <div id="cuerpo">
+            <label class="label" for="figura">Selecciona una figura:</label>
+            <select id="figura">
+                <option value="cuadrado">Cuadrado</option>
+                <option value="rectangulo">Rectángulo</option>
+                <option value="triangulo">Triángulo</option>
+                <option value="circulo">Círculo</option>
+            </select>
+
+            <div id="cuadrado-inputs" class="hidden">
+                <label class="label" for="lado">Lado del cuadrado:</label>
+                <input type="number" id="lado" class="valor">
+            </div>
+
+            <div id="rectangulo-inputs" class="hidden">
+                <label class="label" for="ancho">Ancho del rectángulo:</label>
+                <input type="number" id="ancho" class="valor"><br>
+                <label class="label" for="alto">Alto del rectángulo:</label>
+                <input type="number" id="alto" class="valor">
+            </div>
+
+            <div id="triangulo-inputs" class="hidden">
+                <!-- <label class="label" for="ladoTriangulo">Lado del triángulo:</label>
+                <input type="number" id="ladoTriangulo" class="valor"><br> -->
+                <label class="label" for="base">Base del triángulo:</label>
+                <input type="number" id="base" class="valor"><br>
+                <label class="label" for="altura">Altura del triángulo:</label>
+                <input type="number" id="altura" class="valor">
+
+            </div>
+
+            <div id="circulo-inputs" class="hidden">
+                <label class="label" for="radio">Radio del círculo:</label>
+                <input type="number" id="radio" class="valor">
+            </div>
+
+            <button class="boton" onclick="calcular()">Calcular</button>
+
+            <div id="resultado" class="hidden">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
